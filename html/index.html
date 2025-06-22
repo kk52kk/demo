@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Грузовозофф — Главная</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header {
+      background-color: white;
+      color: #212529;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .main-content {
+      padding: 30px;
+      flex-grow: 1;
+    }
+    .welcome {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+
+    /* Кастомные стили для кнопок */
+    .btn-custom {
+      background-color: white;
+      color: #0d6efd;
+      border: 1px solid #0d6efd;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #0d6efd;
+      color: white;
+    }
+
+    /* Стили для слайдера */
+    .carousel-item {
+      height: 400px; /* фиксированная высота */
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* подгонка и обрезка */
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h2 class="m-0">Грузовозофф</h2>
+    <div>
+      <a href="register.html" class="btn btn-custom me-2">Регистрация</a>
+      <a href="login.html" class="btn btn-custom">Вход</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="welcome">
+      <h3>Добро пожаловать на портал "Грузовозофф"</h3>
+      <p class="text-muted">Быстрая и удобная система заказа грузоперевозок</p>
+    </div>
+
+    <div id="carouselExample" class="carousel slide mx-auto" style="max-width: 800px;" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+        <div class="carousel-item active">
+          <img src="img/mnogo.png" class="d-block w-100" alt="Грузовики">
+        </div>
+        <div class="carousel-item">
+          <img src="img/tri.png" class="d-block w-100" alt="Три машины">
+        </div>
+        <div class="carousel-item">
+          <img src="img/gryz.png" class="d-block w-100" alt="Груз">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Грузовозофф. Все права защищены.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
